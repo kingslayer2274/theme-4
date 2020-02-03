@@ -4,7 +4,7 @@ $very-light-pink: #fe745a;
 
 body {
   font-family: "Merriweather", serif;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   .btn:link,
   .btn:visited {
     position: relative;
@@ -100,6 +100,7 @@ body {
       top: -26%;
       left: 84%;
       transform: rotate(-17deg);
+      overflow-x: hidden;
     }
     .square-2 {
       position: absolute;
@@ -110,6 +111,7 @@ body {
       top: -13%;
       left: 81%;
       transform: rotate(-17deg);
+      overflow-x: hidden;
     }
     .bg {
       width: 100%;
@@ -253,7 +255,11 @@ body {
           }
           &:hover .card-top {
             color: #fff;
-            background-image: linear-gradient(to right, $pink, $very-light-pink);
+            background-image: linear-gradient(
+              to right,
+              $pink,
+              $very-light-pink
+            );
             transition: all 0.5s;
           }
           &:hover .card-body {
@@ -268,7 +274,13 @@ body {
     .line-vr {
       margin: 5px 0;
       height: 2px !important;
-      background: repeating-linear-gradient(to right, #eee 0, #eee 5px, transparent 5px, transparent 7px);
+      background: repeating-linear-gradient(
+        to right,
+        #eee 0,
+        #eee 5px,
+        transparent 5px,
+        transparent 7px
+      );
       width: 6.3rem;
       transform: rotate(90deg);
       position: absolute;
@@ -279,7 +291,13 @@ body {
     .line-hr {
       margin: 5px 0;
       height: 2px !important;
-      background: repeating-linear-gradient(to right, #eee 0, #eee 5px, transparent 5px, transparent 7px);
+      background: repeating-linear-gradient(
+        to right,
+        #eee 0,
+        #eee 5px,
+        transparent 5px,
+        transparent 7px
+      );
       width: 10.3rem;
       position: absolute;
       top: 69%;
@@ -289,7 +307,13 @@ body {
     .line-vl {
       margin: 5px 0;
       height: 2px !important;
-      background: repeating-linear-gradient(to right, #eee 0, #eee 5px, transparent 5px, transparent 7px);
+      background: repeating-linear-gradient(
+        to right,
+        #eee 0,
+        #eee 5px,
+        transparent 5px,
+        transparent 7px
+      );
       width: 6.3rem;
       transform: rotate(90deg);
       position: absolute;
@@ -300,7 +324,13 @@ body {
     .line-hl {
       margin: 5px 0;
       height: 2px !important;
-      background: repeating-linear-gradient(to right, #eee 0, #eee 5px, transparent 5px, transparent 7px);
+      background: repeating-linear-gradient(
+        to right,
+        #eee 0,
+        #eee 5px,
+        transparent 5px,
+        transparent 7px
+      );
       width: 9.65rem;
       position: absolute;
       top: 69%;
@@ -347,7 +377,12 @@ body {
         }
       }
       a.btn {
-        background-image: linear-gradient(to right, $pink, $light-pink, $very-light-pink);
+        background-image: linear-gradient(
+          to right,
+          $pink,
+          $light-pink,
+          $very-light-pink
+        );
         color: white;
         border-radius: 24rem;
       }
@@ -413,7 +448,12 @@ body {
       }
       &:hover .card-top {
         color: #fff;
-        background-image: linear-gradient(to right, $pink, $light-pink, $very-light-pink);
+        background-image: linear-gradient(
+          to right,
+          $pink,
+          $light-pink,
+          $very-light-pink
+        );
         transition: all 0.5s;
       }
     }
@@ -485,12 +525,22 @@ body {
         left: 0;
         right: 0;
         bottom: 30%;
-        background-image: linear-gradient(to right, $pink, $light-pink, $very-light-pink);
+        background-image: linear-gradient(
+          to right,
+          $pink,
+          $light-pink,
+          $very-light-pink
+        );
         opacity: 0;
       }
       &:hover .info {
         color: #fff !important;
-        background-image: linear-gradient(to right, $pink, $light-pink, $very-light-pink);
+        background-image: linear-gradient(
+          to right,
+          $pink,
+          $light-pink,
+          $very-light-pink
+        );
         transition: all 0.5s;
       }
       &:hover {
@@ -518,7 +568,12 @@ body {
       }
     }
     a.btn {
-      background-image: linear-gradient(to right, $pink, $light-pink, $very-light-pink);
+      background-image: linear-gradient(
+        to right,
+        $pink,
+        $light-pink,
+        $very-light-pink
+      );
       color: #fff;
       border-radius: 24rem;
       font-size: 0.9rem;
@@ -616,7 +671,11 @@ body {
           padding-left: 1.5rem;
           padding-right: 1.5rem;
           &:hover {
-            background-image: linear-gradient(to right, $pink, $very-light-pink);
+            background-image: linear-gradient(
+              to right,
+              $pink,
+              $very-light-pink
+            );
             transition: all 0.5s;
             & .tiny {
               color: white;
@@ -627,7 +686,11 @@ body {
             border-right: 1px solid #eee;
             padding: 0 0.8rem 0 0;
             width: 1.9rem !important;
-            background-image: linear-gradient(to right, $pink, $very-light-pink);
+            background-image: linear-gradient(
+              to right,
+              $pink,
+              $very-light-pink
+            );
 
             -webkit-background-clip: text;
             color: transparent;
@@ -661,7 +724,11 @@ body {
             font-size: 0.9rem;
           }
           i {
-            background-image: linear-gradient(to right, $pink, $very-light-pink);
+            background-image: linear-gradient(
+              to right,
+              $pink,
+              $very-light-pink
+            );
 
             -webkit-background-clip: text;
             color: transparent;
@@ -683,7 +750,11 @@ body {
           a {
             border: 1px solid red;
             border-radius: 24rem;
-            background-image: linear-gradient(to right, $pink, $very-light-pink);
+            background-image: linear-gradient(
+              to right,
+              $pink,
+              $very-light-pink
+            );
             color: white;
           }
         }
@@ -754,7 +825,11 @@ body {
             color: #757575;
             &:hover {
               color: white;
-              background-image: linear-gradient(to right, $pink, $very-light-pink);
+              background-image: linear-gradient(
+                to right,
+                $pink,
+                $very-light-pink
+              );
               transition: all 0.5s ease-in-out;
             }
           }
@@ -1040,7 +1115,11 @@ div[slider] > input[type="range"]::-ms-tooltip {
     overflow-x: hidden !important;
   }
   #home {
-    background-image: linear-gradient(to right, rgba($light-pink, 0.2), rgba($light-pink, 0.2)),
+    background-image: linear-gradient(
+        to right,
+        rgba($light-pink, 0.2),
+        rgba($light-pink, 0.2)
+      ),
       url("../images/sakura.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -1125,13 +1204,16 @@ div[slider] > input[type="range"]::-ms-tooltip {
   #match {
     .names {
       border-radius: 0 !important;
+      margin-right: 0 !important;
       .crushed-name {
       }
       .crushed {
-        width: 16rem !important;
+        // width: 1rem !important;
       }
       .crush-name {
-        margin-top: 2rem !important;
+        .margin-right {
+          margin-right: 0 !important;
+        }
       }
     }
   }

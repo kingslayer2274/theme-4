@@ -99,5 +99,7 @@ $("#navbarNav a").on("click", function(e) {
 // $("input[type='range']").popup();
 
 $(document).ready(function() {
-  $(".ui-select").removeClass("ui-select");
+  if ($(window).width() < 500) {
+    $(".margin-right").removeClass("margin-right");
+  }
 });

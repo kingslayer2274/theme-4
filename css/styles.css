@@ -1,6 +1,6 @@
 body {
   font-family: "Merriweather", serif;
-  overflow-x: hidden; }
+  overflow-x: hidden !important; }
   body .btn:link,
   body .btn:visited {
     position: relative;
@@ -74,7 +74,8 @@ body {
     width: 20rem;
     top: -26%;
     left: 84%;
-    transform: rotate(-17deg); }
+    transform: rotate(-17deg);
+    overflow-x: hidden; }
   body #home .square-2 {
     position: absolute;
     background-color: #f5f5ff;
@@ -83,7 +84,8 @@ body {
     width: 20rem;
     top: -13%;
     left: 81%;
-    transform: rotate(-17deg); }
+    transform: rotate(-17deg);
+    overflow-x: hidden; }
   body #home .bg {
     width: 100%;
     position: absolute;
@@ -864,11 +866,10 @@ div[slider] > input[type="range"]::-ms-tooltip {
       top: -44% !important;
       left: 25% !important; }
   #match .names {
-    border-radius: 0 !important; }
-    #match .names .crushed {
-      width: 16rem !important; }
-    #match .names .crush-name {
-      margin-top: 2rem !important; }
+    border-radius: 0 !important;
+    margin-right: 0 !important; }
+    #match .names .crush-name .margin-right {
+      margin-right: 0 !important; }
   #work .card .card-body {
     padding-top: 2rem !important;
     padding-bottom: 2rem; }
