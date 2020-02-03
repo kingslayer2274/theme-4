@@ -66,26 +66,29 @@ body {
   body #button.show {
     opacity: 1;
     visibility: visible; }
-  body #home .square {
-    position: absolute;
-    background-color: #f9f9f9;
-    border-radius: 5rem;
-    height: 20rem;
-    width: 20rem;
-    top: -26%;
-    left: 84%;
-    transform: rotate(-17deg);
-    overflow-x: hidden; }
-  body #home .square-2 {
-    position: absolute;
-    background-color: #f5f5ff;
-    border-radius: 5rem;
-    height: 20rem;
-    width: 20rem;
-    top: -13%;
-    left: 81%;
-    transform: rotate(-17deg);
-    overflow-x: hidden; }
+  body #home .sq-cont {
+    position: relative;
+    overflow-x: hidden !important; }
+    body #home .sq-cont .square {
+      position: absolute;
+      background-color: #f9f9f9;
+      border-radius: 5rem;
+      height: 20rem;
+      width: 20rem;
+      top: -26%;
+      left: 84%;
+      transform: rotate(-17deg);
+      overflow-x: hidden; }
+    body #home .sq-cont .square-2 {
+      position: absolute;
+      background-color: #f5f5ff;
+      border-radius: 5rem;
+      height: 20rem;
+      width: 20rem;
+      top: -13%;
+      left: 81%;
+      transform: rotate(-17deg);
+      overflow-x: hidden; }
   body #home .bg {
     width: 100%;
     position: absolute;
@@ -813,7 +816,12 @@ div[slider] > input[type="range"]::-ms-tooltip {
   #home {
     background-image: linear-gradient(to right, rgba(252, 78, 88, 0.2), rgba(252, 78, 88, 0.2)), url("../images/sakura.jpg");
     background-size: cover;
+    position: relative !important;
     background-repeat: no-repeat; }
+    #home .square,
+    #home .square-2 {
+      display: inline-block !important;
+      overflow-x: hidden !important; }
     #home .overlay {
       top: 0;
       right: 0;
