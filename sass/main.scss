@@ -89,10 +89,35 @@ body {
     opacity: 1;
     visibility: visible;
   }
+  nav {
+    .logo {
+      background-image: linear-gradient(to right, $pink, $very-light-pink);
+      padding: 3rem;
+      font-size: 2rem;
+      position: absolute;
+      top: -40%;
+      left: 2%;
+      max-width: 13rem;
+      border-bottom-left-radius: 24rem;
+      border-bottom-right-radius: 24rem;
+      color: antiquewhite;
+    }
 
+    .btn {
+      border-radius: 4rem;
+      background-image: linear-gradient(to right, $pink, $very-light-pink);
+
+      font-size: 0.8rem;
+      font-weight: bold;
+      a {
+        color: white !important;
+      }
+    }
+  }
   #home {
     .sq-cont {
       position: relative;
+      margin-top: -8rem;
       overflow-x: hidden !important;
       .square {
         position: absolute;
@@ -127,32 +152,15 @@ body {
       opacity: 0.4;
     }
 
-    nav {
-      position: relative;
-
-      img {
-        position: absolute;
-        top: -35%;
-        left: 2%;
-        max-width: 13rem;
-      }
-      .btn {
-        border-radius: 4rem;
-        background-image: linear-gradient(to right, $pink, $very-light-pink);
-
-        font-size: 0.8rem;
-        font-weight: bold;
-        a {
-          color: white !important;
-        }
-      }
-    }
     .section {
-      margin-top: 11rem;
+      overflow-y: hidden !important;
+      margin-top: 17rem;
       .title {
         font-size: 1.2rem;
         letter-spacing: 0.5rem;
-        color: $pink;
+        background-image: linear-gradient(to right, $pink, $very-light-pink);
+        -webkit-background-clip: text;
+        color: transparent;
         animation: moveUp 1s;
       }
       a.btn {
@@ -415,6 +423,7 @@ body {
           background-image: linear-gradient(to right, $pink, $very-light-pink);
           border-radius: 50%;
           height: 2rem;
+          color: white;
         }
       }
       &:hover .card-top {
@@ -453,6 +462,13 @@ body {
       .slider1,
       .slider2,
       .slider3 {
+        .quote {
+          font-size: 6.5rem;
+          background-image: linear-gradient(to right, $pink, $very-light-pink);
+          -webkit-text-fill-color: transparent;
+          -webkit-background-clip: text;
+          margin: -2rem auto auto -1rem;
+        }
         img {
           width: 10rem;
           height: 10rem;
@@ -743,8 +759,16 @@ body {
     background-color: #252525;
     .myborder {
       border-bottom: 1px solid #757575;
-      img {
+      .logo {
         margin: 0 auto;
+        background-image: linear-gradient(to right, $pink, $very-light-pink);
+        padding: 3rem;
+        font-size: 2rem;
+
+        max-width: 13rem;
+        border-bottom-left-radius: 24rem;
+        border-bottom-right-radius: 24rem;
+        color: antiquewhite;
       }
       .media {
         margin: 1rem auto;
@@ -1045,12 +1069,26 @@ div[slider] > input[type="range"]::-ms-tooltip {
   body {
     overflow-x: hidden !important;
   }
+  nav {
+    .logo {
+      max-width: 8rem;
+      margin-top: -10px;
+      font-size: 1.5rem !important;
+      padding: 2rem !important;
+    }
+  }
   #home {
     background-image: linear-gradient(to right, rgba($light-pink, 0.2), rgba($light-pink, 0.2)),
       url("../images/sakura.jpg");
     background-size: cover;
     position: relative !important;
     background-repeat: no-repeat;
+    .section {
+      margin-top: 14rem !important;
+    }
+    .sq-cont {
+      margin-top: -7rem !important;
+    }
     .square,
     .square-2 {
       display: inline-block !important;
@@ -1064,12 +1102,7 @@ div[slider] > input[type="range"]::-ms-tooltip {
       bottom: 0;
       z-index: 999;
     }
-    nav {
-      .logo {
-        max-width: 8rem;
-        margin-top: -10px;
-      }
-    }
+
     .ribbon {
       max-width: 10rem;
       padding-right: 1rem;
@@ -1079,7 +1112,7 @@ div[slider] > input[type="range"]::-ms-tooltip {
       margin-bottom: 5rem !important;
     }
     .title {
-      margin-top: -4rem !important;
+      margin-top: 0rem !important;
     }
     .meet {
       font-size: 1.2rem !important;

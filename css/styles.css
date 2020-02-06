@@ -66,8 +66,27 @@ body {
   body #button.show {
     opacity: 1;
     visibility: visible; }
+  body nav .logo {
+    background-image: linear-gradient(to right, #fa2457, #fe745a);
+    padding: 3rem;
+    font-size: 2rem;
+    position: absolute;
+    top: -40%;
+    left: 2%;
+    max-width: 13rem;
+    border-bottom-left-radius: 24rem;
+    border-bottom-right-radius: 24rem;
+    color: antiquewhite; }
+  body nav .btn {
+    border-radius: 4rem;
+    background-image: linear-gradient(to right, #fa2457, #fe745a);
+    font-size: 0.8rem;
+    font-weight: bold; }
+    body nav .btn a {
+      color: white !important; }
   body #home .sq-cont {
     position: relative;
+    margin-top: -8rem;
     overflow-x: hidden !important; }
     body #home .sq-cont .square {
       position: absolute;
@@ -97,26 +116,15 @@ body {
     right: 0;
     bottom: 0;
     opacity: 0.4; }
-  body #home nav {
-    position: relative; }
-    body #home nav img {
-      position: absolute;
-      top: -35%;
-      left: 2%;
-      max-width: 13rem; }
-    body #home nav .btn {
-      border-radius: 4rem;
-      background-image: linear-gradient(to right, #fa2457, #fe745a);
-      font-size: 0.8rem;
-      font-weight: bold; }
-      body #home nav .btn a {
-        color: white !important; }
   body #home .section {
-    margin-top: 11rem; }
+    overflow-y: hidden !important;
+    margin-top: 17rem; }
     body #home .section .title {
       font-size: 1.2rem;
       letter-spacing: 0.5rem;
-      color: #fa2457;
+      background-image: linear-gradient(to right, #fa2457, #fe745a);
+      -webkit-background-clip: text;
+      color: transparent;
       animation: moveUp 1s; }
     body #home .section a.btn {
       background-color: #fff;
@@ -326,7 +334,8 @@ body {
           padding: 0.2rem 0.8rem 2rem;
           background-image: linear-gradient(to right, #fa2457, #fe745a);
           border-radius: 50%;
-          height: 2rem; }
+          height: 2rem;
+          color: white; }
       body #work .card:hover .card-top {
         color: #fff;
         background-image: linear-gradient(to right, #fa2457, #fc4e58, #fe745a);
@@ -351,6 +360,14 @@ body {
         position: absolute;
         top: 60%;
         left: 66%; }
+      body #reviews .owl-carousel .slider1 .quote,
+      body #reviews .owl-carousel .slider2 .quote,
+      body #reviews .owl-carousel .slider3 .quote {
+        font-size: 6.5rem;
+        background-image: linear-gradient(to right, #fa2457, #fe745a);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        margin: -2rem auto auto -1rem; }
       body #reviews .owl-carousel .slider1 img,
       body #reviews .owl-carousel .slider2 img,
       body #reviews .owl-carousel .slider3 img {
@@ -572,8 +589,15 @@ body {
     background-color: #252525; }
     body footer .myborder {
       border-bottom: 1px solid #757575; }
-      body footer .myborder img {
-        margin: 0 auto; }
+      body footer .myborder .logo {
+        margin: 0 auto;
+        background-image: linear-gradient(to right, #fa2457, #fe745a);
+        padding: 3rem;
+        font-size: 2rem;
+        max-width: 13rem;
+        border-bottom-left-radius: 24rem;
+        border-bottom-right-radius: 24rem;
+        color: antiquewhite; }
       body footer .myborder .media {
         margin: 1rem auto; }
         body footer .myborder .media p {
@@ -813,11 +837,20 @@ div[slider] > input[type="range"]::-ms-tooltip {
 @media only screen and (max-width: 500px) {
   body {
     overflow-x: hidden !important; }
+  nav .logo {
+    max-width: 8rem;
+    margin-top: -10px;
+    font-size: 1.5rem !important;
+    padding: 2rem !important; }
   #home {
     background-image: linear-gradient(to right, rgba(252, 78, 88, 0.2), rgba(252, 78, 88, 0.2)), url("../images/sakura.jpg");
     background-size: cover;
     position: relative !important;
     background-repeat: no-repeat; }
+    #home .section {
+      margin-top: 14rem !important; }
+    #home .sq-cont {
+      margin-top: -7rem !important; }
     #home .square,
     #home .square-2 {
       display: inline-block !important;
@@ -828,9 +861,6 @@ div[slider] > input[type="range"]::-ms-tooltip {
       left: 0;
       bottom: 0;
       z-index: 999; }
-    #home nav .logo {
-      max-width: 8rem;
-      margin-top: -10px; }
     #home .ribbon {
       max-width: 10rem;
       padding-right: 1rem;
@@ -838,7 +868,7 @@ div[slider] > input[type="range"]::-ms-tooltip {
     #home .col-md-4 {
       margin-bottom: 5rem !important; }
     #home .title {
-      margin-top: -4rem !important; }
+      margin-top: 0rem !important; }
     #home .meet {
       font-size: 1.2rem !important;
       margin-top: -7rem;
